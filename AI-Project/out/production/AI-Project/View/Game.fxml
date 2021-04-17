@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+   <children>
+      <ImageView fitHeight="746.0" fitWidth="775.0" layoutX="-8.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="46.0" text="a" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="46.0" text="b" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="46.0" text="c" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="46.0" text="d" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="404.0" layoutY="46.0" text="e" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="46.0" text="f" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="46.0" text="g" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="46.0" text="h" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="p1" layoutX="95.0" text="Player 1">
+         <font>
+            <Font name="Century Schoolbook Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="108.0" text="1" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="108.0" onMouseClicked="#a1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="164.0" layoutY="108.0" onMouseClicked="#b1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="108.0" onMouseClicked="#d1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="108.0" onMouseClicked="#c1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="381.0" layoutY="108.0" onMouseClicked="#e1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="84.0" layoutX="523.0" layoutY="108.0" onMouseClicked="#g1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="452.0" layoutY="108.0" onMouseClicked="#f1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="110.0" layoutX="594.0" layoutY="108.0" onMouseClicked="#h1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="177.0" onMouseClicked="#a2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="177.0" onMouseClicked="#b2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="177.0" onMouseClicked="#e2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="177.0" onMouseClicked="#f2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="177.0" onMouseClicked="#g2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="177.0" onMouseClicked="#h2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="177.0" onMouseClicked="#c2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="177.0" onMouseClicked="#d2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="313.0" onMouseClicked="#h4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="313.0" onMouseClicked="#g4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="313.0" onMouseClicked="#f4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="313.0" onMouseClicked="#e4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="313.0" onMouseClicked="#d4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="313.0" onMouseClicked="#c4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="313.0" onMouseClicked="#b4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="313.0" onMouseClicked="#a4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="245.0" onMouseClicked="#a3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="245.0" onMouseClicked="#b3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="245.0" onMouseClicked="#c3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="245.0" onMouseClicked="#d3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="245.0" onMouseClicked="#e3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="245.0" onMouseClicked="#f3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="245.0" onMouseClicked="#g3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="245.0" onMouseClicked="#h3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="381.0" onMouseClicked="#a5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="381.0" onMouseClicked="#b5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="381.0" onMouseClicked="#c5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="381.0" onMouseClicked="#d5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="381.0" onMouseClicked="#e5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="381.0" onMouseClicked="#f5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="381.0" onMouseClicked="#g5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="381.0" onMouseClicked="#h5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="449.0" onMouseClicked="#a6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="449.0" onMouseClicked="#b6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="449.0" onMouseClicked="#c6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="449.0" onMouseClicked="#d6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="449.0" onMouseClicked="#e6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="449.0" onMouseClicked="#f6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="449.0" onMouseClicked="#g6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="449.0" onMouseClicked="#h6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="517.0" onMouseClicked="#e7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="517.0" onMouseClicked="#f7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="517.0" onMouseClicked="#g7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="517.0" onMouseClicked="#h7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="517.0" onMouseClicked="#d7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="517.0" onMouseClicked="#c7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="517.0" onMouseClicked="#a7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="517.0" onMouseClicked="#b7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="93.0" layoutY="585.0" onMouseClicked="#a8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="164.0" layoutY="585.0" onMouseClicked="#b8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="235.0" layoutY="585.0" onMouseClicked="#c8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="309.0" layoutY="585.0" onMouseClicked="#d8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="381.0" layoutY="585.0" onMouseClicked="#e8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="452.0" layoutY="585.0" onMouseClicked="#f8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="523.0" layoutY="585.0" onMouseClicked="#g8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="594.0" layoutY="585.0" onMouseClicked="#h8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/rect.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="p2" layoutX="479.0" text="Player 2" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="181.0" text="2" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="249.0" text="3" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="317.0" text="4" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="385.0" text="5" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="453.0" text="6" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="517.0" text="7" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="585.0" text="8" textFill="#ac3a81">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="a1_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b1_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c1_w" fitHeight="59.0" fitWidth="94.0" layoutX="239.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d1_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e1_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f1_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g1_w" fitHeight="59.0" fitWidth="94.0" layoutX="527.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h1_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a2_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b2_w" fitHeight="59.0" fitWidth="94.0" layoutX="168.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c2_w" fitHeight="59.0" fitWidth="94.0" layoutX="239.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d2_w" fitHeight="59.0" fitWidth="94.0" layoutX="313.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e2_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f2_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g2_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h2_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a3_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b3_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c3_w" fitHeight="59.0" fitWidth="94.0" layoutX="240.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d3_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e3_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f3_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g3_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h3_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a4_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b4_w" fitHeight="59.0" fitWidth="94.0" layoutX="168.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c4_w" fitHeight="59.0" fitWidth="94.0" layoutX="239.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d4_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e4_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f4_w" fitHeight="59.0" fitWidth="94.0" layoutX="456.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g4_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h4_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a5_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b5_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c5_w" fitHeight="59.0" fitWidth="94.0" layoutX="239.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d5_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e5_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f5_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g5_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h5_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a6_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b6_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c6_w" fitHeight="59.0" fitWidth="94.0" layoutX="240.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d6_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e6_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f6_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g6_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h6_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a7_w" fitHeight="59.0" fitWidth="94.0" layoutX="98.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b7_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c7_w" fitHeight="59.0" fitWidth="94.0" layoutX="240.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d7_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e7_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f7_w" fitHeight="59.0" fitWidth="94.0" layoutX="457.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g7_w" fitHeight="59.0" fitWidth="94.0" layoutX="528.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h7_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c8_w" fitHeight="59.0" fitWidth="94.0" layoutX="240.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a8_w" fitHeight="59.0" fitWidth="94.0" layoutX="97.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b8_w" fitHeight="59.0" fitWidth="94.0" layoutX="169.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d8_w" fitHeight="59.0" fitWidth="94.0" layoutX="314.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e8_w" fitHeight="59.0" fitWidth="94.0" layoutX="386.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f8_w" fitHeight="59.0" fitWidth="94.0" layoutX="456.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g8_w" fitHeight="59.0" fitWidth="94.0" layoutX="527.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h8_w" fitHeight="59.0" fitWidth="94.0" layoutX="599.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/1200px-White_Circle.svg.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="39.1" radius="14.525" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a1_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b1_b" fitHeight="59.0" fitWidth="59.0" layoutX="169.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c1_b" fitHeight="59.0" fitWidth="59.0" layoutX="239.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f1_b" fitHeight="59.0" fitWidth="59.0" layoutX="457.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e1_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d1_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g1_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h1_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f2_b" fitHeight="59.0" fitWidth="59.0" layoutX="457.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g2_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h2_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e2_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g3_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h3_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a2_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b2_b" fitHeight="59.0" fitWidth="59.0" layoutX="168.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c2_b" fitHeight="59.0" fitWidth="59.0" layoutX="239.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d2_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f4_b" fitHeight="59.0" fitWidth="59.0" layoutX="457.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g4_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h4_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a3_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b3_b" fitHeight="59.0" fitWidth="59.0" layoutX="169.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c3_b" fitHeight="59.0" fitWidth="59.0" layoutX="240.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d3_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f3_b" fitHeight="59.0" fitWidth="59.0" layoutX="457.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e3_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c4_b" fitHeight="59.0" fitWidth="59.0" layoutX="240.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b4_b" fitHeight="59.0" fitWidth="59.0" layoutX="169.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h5_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a4_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b5_b" fitHeight="59.0" fitWidth="59.0" layoutX="169.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g5_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c5_b" fitHeight="59.0" fitWidth="59.0" layoutX="240.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f5_b" fitHeight="59.0" fitWidth="59.0" layoutX="457.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g6_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h6_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a5_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f6_b" fitHeight="59.0" fitWidth="59.0" layoutX="456.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e6_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a6_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b6_b" fitHeight="59.0" fitWidth="59.0" layoutX="168.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c6_b" fitHeight="59.0" fitWidth="59.0" layoutX="240.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d6_b" fitHeight="59.0" fitWidth="59.0" layoutX="313.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f7_b" fitHeight="59.0" fitWidth="59.0" layoutX="456.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g7_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h7_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d8_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e8_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="f8_b" fitHeight="59.0" fitWidth="59.0" layoutX="456.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="g8_b" fitHeight="59.0" fitWidth="59.0" layoutX="528.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="h8_b" fitHeight="59.0" fitWidth="59.0" layoutX="599.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a7_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b7_b" fitHeight="59.0" fitWidth="59.0" layoutX="168.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c7_b" fitHeight="59.0" fitWidth="59.0" layoutX="239.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d7_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e7_b" fitHeight="59.0" fitWidth="59.0" layoutX="385.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="c8_b" fitHeight="59.0" fitWidth="59.0" layoutX="240.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="b8_b" fitHeight="59.0" fitWidth="59.0" layoutX="169.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="a8_b" fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e4_b" fitHeight="59.0" fitWidth="59.0" layoutX="385.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d5_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="d4_b" fitHeight="59.0" fitWidth="59.0" layoutX="314.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="e5_b" fitHeight="59.0" fitWidth="59.0" layoutX="386.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/java/AI-Project/images/11245-medium-black-circle.png" />
+         </image>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" color="#8a8585" height="39.0" radius="14.5" />
+         </effect>
+      </ImageView>
+      <Label fx:id="turnLabel" layoutX="54.0" layoutY="648.0" prefHeight="62.0" prefWidth="676.0" text="player's turn to play" textAlignment="CENTER" textFill="#ac3a81" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Century Schoolbook Bold" size="49.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+   </children>
+</Pane>

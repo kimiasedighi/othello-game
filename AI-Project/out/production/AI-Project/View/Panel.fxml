@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PanelController">
+   <children>
+      <Pane fx:id="gameType" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #56fc8d;">
+         <children>
+            <Label layoutX="70.0" layoutY="88.0" text="Let's Play Othello" textFill="#977272">
+               <font>
+                  <Font name="Schadow BT Bold" size="66.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <Button layoutX="258.0" layoutY="520.0" mnemonicParsing="false" onAction="#startGame" prefHeight="87.0" prefWidth="199.0" style="-fx-background-color: #e292cf;" text="START" textFill="#310026">
+               <font>
+                  <Font name="Schadow BT Bold" size="40.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#947f7f" height="85.35" radius="57.07" width="144.93" />
+               </effect>
+            </Button>
+            <TextField fx:id="player1" layoutX="201.0" layoutY="245.0" prefHeight="70.0" prefWidth="298.0" promptText="first player's name">
+               <effect>
+                  <Lighting diffuseConstant="1.36" specularConstant="0.26" specularExponent="40.0" surfaceScale="2.53">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="player2" layoutX="201.0" layoutY="330.0" prefHeight="70.0" prefWidth="298.0" promptText="second player's name">
+               <effect>
+                  <Lighting diffuseConstant="1.36" specularConstant="0.26" specularExponent="40.0" surfaceScale="2.53">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </TextField>
+            <RadioButton fx:id="pp" layoutX="96.0" layoutY="435.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="177.0" text="Player vs. Player (phase1)" />
+            <RadioButton fx:id="pa" layoutX="291.0" layoutY="435.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="177.0" text="Player vs. AI (phase2)" />
+            <RadioButton fx:id="aa" layoutX="468.0" layoutY="435.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="177.0" text="AI vs. AI (phase3)" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
